@@ -10,9 +10,8 @@ options.add_argument('--disable-gpu')#GPU使うようなページではオフに
 driver = webdriver.Chrome(options=options)
 """
 driver = webdriver.Chrome("./chromedriver")
-
 url = 'http://yume-uranai.jp/keyword.html'
-words = ('牛 カエル')
+words = input('スペース区切りで調べたいワードを入力してください')
 
 driver.get(url)
 sleep(1)
